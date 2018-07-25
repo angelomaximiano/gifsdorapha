@@ -33,7 +33,7 @@ export default class Help extends React.Component {
 
   static renderHeader(repositoryInfo) {
     const firstStep = repositoryInfo.isConfigured
-      ? <li className="done"><span className="number">1</span>Bootstrap your project!</li>
+      ? <li className="done"><span className="number">1</span>Bootstrap your project</li>
       : <li><a href="#config"><span className="number">1</span>Bootstrap your project<img src="images/arrow.svg" alt="" /></a></li>
     return (
       <header>
