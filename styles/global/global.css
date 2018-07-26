@@ -1,0 +1,135 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: AprovaSans;
+  src:  url('../../fonts/Aprova-Regular.woff2') format('woff2'),
+        url('../../fonts/Aprova-Regular.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AprovaSans;
+  src:  url('../../fonts/Aprova-Bold.woff2') format('woff2'),
+        url('../../fonts/Aprova-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  font-family: AprovaSans;
+  letter-spacing: -0.010em;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--onyx);
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+  transition: opacity .3s ease .5s;
+  opacity: 1;
+}
+
+.body-hidden {
+  opacity: 0;
+}
+
+
+h1 {
+  font-size: calc(0.6vw + 17.3px);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: var(--aluminun);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+-webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.grid-section {
+   padding-top: 30px;
+   margin: 0 5vw;
+   display: flex;
+   flex-wrap: wrap;
+   animation-delay: .3s;
+ }
+
+ @media only screen and (max-width: 900px) {
+   section {
+     column-count: 1;
+   }
+ }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+ .filtertext {
+  display: inline-block;
+  padding-right: 12px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: -0.9px;
+  font-size: calc(1.283vw + 17.3px);
+}
+
+.filtertextselect {
+  padding-right: 12px;
+  display: inline-block;
+  color: var(--iron);
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: -0.9px;
+  font-size: calc(1.283vw + 17.3px);
+  vertical-align: bottom;
+}
+
+.filterspace {
+  padding-right: 12px;
+  display: inline-block;
+  max-width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-top: 110px;
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+
+spacer {
+  max-width: 100%;
+  padding-top: 30px;
+}
+

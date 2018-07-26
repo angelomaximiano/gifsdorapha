@@ -1,0 +1,4 @@
+/* Global styles */
+@import "./global/variables.css";
+@import "./global/global.css";
+@import "./global/utils.css";
