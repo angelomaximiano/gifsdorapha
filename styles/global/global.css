@@ -4,39 +4,6 @@
           box-sizing: border-box;
 }
 
-@font-face {
-  font-family: AprovaSans;
-  src:  url('../../fonts/Aprova-Regular.woff2') format('woff2'),
-        url('../../fonts/Aprova-Regular.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: AprovaSans;
-  src:  url('../../fonts/Aprova-Bold.woff2') format('woff2'),
-        url('../../fonts/Aprova-Bold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-}
-
-body {
-  font-family: AprovaSans;
-  letter-spacing: -0.010em;
-  -webkit-text-rendering: optimizeLegibility;
-  -moz-text-rendering: optimizeLegibility;
-  -ms-text-rendering: optimizeLegibility;
-  -o-text-rendering: optimizeLegibility;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: var(--onyx);
-  background-color: var(--white);
-  margin: 0;
-  padding: 0;
-  transition: opacity .3s ease .5s;
-  opacity: 1;
-}
-
 .body-hidden {
   opacity: 0;
 }
