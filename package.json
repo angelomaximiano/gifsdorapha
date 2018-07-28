@@ -1,23 +1,14 @@
 {
-  "name": "gifsdorapha",
+  "name": "userstudies",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "browser-sync": "^2.24.6"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/angelomaximiano/gifsdorapha.git"
+    "start": "browser-sync start --directory --server --files '**/*.css, **/*.html, **/*.js'"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/angelomaximiano/gifsdorapha/issues"
-  },
-  "homepage": "https://github.com/angelomaximiano/gifsdorapha#readme"
+  "dependencies": {
+    "browser-sync": "^2.24.5"
+  }
 }
